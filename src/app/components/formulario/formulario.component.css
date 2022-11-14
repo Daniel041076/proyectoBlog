@@ -1,0 +1,9 @@
+.newPost{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkolivegreen;
+    margin: 10px 150px;
+    
+    
+
+}

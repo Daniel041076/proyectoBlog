@@ -1,0 +1,40 @@
+
+  <div class="newPost">
+      <form [formGroup]="formulario" (ngSubmit)="createPost  (formulario)">
+         <div class="mb-3">
+            <label class="form-label">Titulo:</label>
+            <input type="text" class="form-control" formControlName="titulo">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Texto:</label>
+            <input type="text" class="form-control" formControlName="texto">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Autor</label>
+            <input type="text" class="form-control" formControlName="autor">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-control" formControlName="fecha">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Categoria:</label>
+            <input type="text" class="form-control" formControlName="categoria">
+         </div>
+         <div class="input">
+            <label>Categoría: </label>
+            <select formControlName="categoria">
+                <option value="Asequible">Asequible</option>
+                <option value="Media">Media</option>
+                <option value="Dificil">Dificil</option>
+                
+            </select>
+        </div>
+        
+        <input type="submit" value="Enviar">
+     </form>
+    </div>
